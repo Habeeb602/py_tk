@@ -5,7 +5,6 @@ from PIL import ImageTk, Image
 
 def openFile():
     global myImg
-    filedialog.
     filename =filedialog.askopenfilename(initialdir="/home/habeeb/py_tk", title="Open a Image", filetypes=( ("PNG Files", "*.png"), ("JPG Files","*.jpg"), ("All Files", "*.*") ))
     # Label(root, text=filename).pack(padx=20, pady=30)
     myImg = ImageTk.PhotoImage(Image.open(filename))
